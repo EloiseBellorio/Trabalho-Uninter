@@ -1,0 +1,82 @@
+<!-- Página  da minha "Formação Acadêmica" com linha do tempo, interesses científicos e idiomas -->
+<!-- formacao.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formação - Eloise</title>
+
+  <!-- Importação do estilo externo principal -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte gótica adicional usada para destaque nos textos -->
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Cabeçalho da página com título em destaque -->
+  <header>
+    <h1 id="roots2">Formação Acadêmica</h1>
+  </header>
+
+  <!-- Menu de navegação fixo em todas as páginas -->
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre Mim</a>
+    <a href="formacao.html">Formação</a>
+    <a href="portfolio.html">Portfólio</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <section>
+
+      <!-- Subtítulo da seção -->
+      <h2 id="roots">Minha Jornada Acadêmica</h2>
+
+      <!-- Linha do tempo vertical com eventos acadêmicos -->
+      <h2>Linha do Tempo</h2>
+      <div class="timeline">
+        <div class="evento"><span class="ano">● 2020</span> – Conclusão do Ensino Médio</div>
+        <div class="evento"><span class="ano">● 2024</span> – Início do curso de Análise e Desenvolvimento de Sistemas</div>
+        <div class="evento"><span class="ano">● 2025</span> – Início do Bacharelado em Engenharia da Computação</div>
+        <div class="evento"><span class="ano">● 2020</span> – Início dos cursos livres em biologia molecular e microbiologia</div>
+      </div>
+
+      <!-- Descrição dos meus cursos livres e referências culturais -->
+      <h3>Cursos Livres</h3>
+      <p>
+        Sou fascinada por biologia molecular e microbiologia, e isso vai além do estudo — inclusive nos meus nicks em jogos, como 
+        <span class="gótico">Yersinia</span> e <span class="gótico">Antraz</span>. Por exemplo, foi a bactéria 
+        <span class="gótico">Yersinia pestis</span> a responsável pela <span class="gótico">Peste Negra</span>, que devastou a Europa durante a Idade Média.
+      </p>
+
+      <!-- Imagem ilustrativa com legenda sobre o médico da peste -->
+      <div class="imagem-peste">
+        <img src="medico-peste.png" alt="Ilustração de um médico da peste">
+        <p class="legenda">Médico da peste: figura icônica da pandemia bubônica no século XVII.</p>
+      </div>
+
+      <!-- Linha divisória decorativa entre seções -->
+      <hr class="divisoria">
+
+      <!-- Seção de idiomas com efeito visual (fade-in) e tooltips góticos -->
+      <div class="idiomas fade-in">
+        <h3 id="drac5">Idiomas</h3>
+        <p>
+          Além do português e do inglês, que domino com fluência, também possuo bom entendimento de 
+          <span class="gótico tooltip" data-frase="Cunoașterea este putere.">romeno</span> e 
+          <span class="gótico tooltip" data-frase="Memento mori.">latim</span> — línguas que cultivo por pura curiosidade histórica.
+        </p>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>&copy; 2025 - Eloise Bellorio</p>
+  </footer>
+</body>
+</html>

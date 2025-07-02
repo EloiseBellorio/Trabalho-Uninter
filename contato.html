@@ -1,0 +1,78 @@
+<!-- Página de Contato com formulário funcional e mensagem de confirmação via JS -->
+
+<!-- contato.html-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Contato</title>
+
+  <!-- Vinculação com o CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Cabeçalho com título e menu de navegação -->
+  <header>
+    <h1 class="idk">Contato</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre Mim</a>
+      <a href="formacao.html">Formação</a>
+      <a href="portfolio.html">Portfólio</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal com efeito de transição -->
+  <main class="fade-in">
+    <section class="formulario-contato">
+      <h2 class="titulo-pagina">Fale Comigo</h2>
+
+      <!-- Formulário de contato com validação básica via "required" -->
+      <form id="contato-form">
+
+        <!-- Campo para nome -->
+        <label for="nome" class="gotico">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <!-- Campo para email com validação HTML5 -->
+        <label for="email" class="gotico">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Campo para mensagem personalizada -->
+        <label for="mensagem" class="gotico">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+        <!-- Botão de envio -->
+        <input type="submit" value="Enviar">
+
+        <!-- Mensagem exibida após envio com sucesso (via JS) -->
+        <p id="mensagem-sucesso" style="display: none; color: #007700; font-weight: bold; margin-top: 20px;">
+          Sua mensagem foi enviada com sucesso!
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé padrão -->
+  <footer>
+    <p>© 2025 Eloise Bellorio</p>
+  </footer>
+
+  <!-- Script JavaScript para interceptar o envio do formulário -->
+  <script>
+    document.getElementById("contato-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // impede envio real
+
+      // mostra mensagem de sucesso
+      const sucesso = document.getElementById("mensagem-sucesso");
+      sucesso.style.display = "block";
+
+      // limpa o formulário
+      this.reset();
+    });
+  </script>
+</body>
+</html>
